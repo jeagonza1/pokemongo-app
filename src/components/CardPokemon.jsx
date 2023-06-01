@@ -17,6 +17,7 @@ function CardPokemon({
     hp,
     pokemons,
     editPokemon,
+    onAlertCreate,
 }) {
     let [modalState, setModalState] = useState(false);
     /** Function to handle close modal pokemon */
@@ -31,7 +32,7 @@ function CardPokemon({
      * @param id id of the pokemon
      */
     const handleDelete = (id) => {
-        deletePokemon(id);
+        deletePokemon(id).then((data) => onAlertCreate(data.message));
         pokemons(id);
     };
     /**

@@ -20,7 +20,7 @@ const baseURL = 'https://pokemongo-api.azurewebsites.net/api';
  */
 export const createPokemon = async (postData) => {
     let data = {};
-    let pokemon = [postData];
+    let pokemon = postData;
 
     await axios
         .post(baseURL + '/pokemon', pokemon)

@@ -160,6 +160,7 @@ const Pokedex = () => {
                             type={data.type}
                             pokemons={(id) => deletePokemon(id)}
                             editPokemon={(data) => handleEditPokemon(data)}
+                            onAlertCreate={(text) => handleAdd(text)}
                         />
                     ))}
                 </section>
