@@ -77,7 +77,7 @@ function ModalPokemonAdd({
                 edit: false,
             });
         }
-    }, []);
+    });
 
     return (
         <Modal
