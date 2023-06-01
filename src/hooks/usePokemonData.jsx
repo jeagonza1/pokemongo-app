@@ -158,7 +158,7 @@ export const usePokemons = (search = '') => {
                 data: data,
             })
         );
-    });
+    }, []);
 
     return state;
 };
